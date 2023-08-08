@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Página principal -->
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Pagina em Construção</title>
+    <title>Tabela de compras</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='_css/table.css'>
     <script src='compras.js'></script>
@@ -12,26 +13,24 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="gradient">Compras</h1>
+        <br><h1 class="gradient">Compras</h1>
         <!-- cria o campo input  -->
         <br>
         <label id="nome">Produtos:</label>
         <input class="input" id="nomeUser" type="text">
         <br>
-        <br>
-        <button class="btn btn-outline-dark" type="button" onclick="salvarUser()">Salvar</button>
+        <button class="btn btn-outline-light" type="button" onclick="salvarUser()">Salvar</button>
     </div>
-    
+
     <br>
     <div>
         <!-- cria tabela -->
         <table class="table table table-hover" id="tabela">
         <tr>
-            <th>Nome produto</th>
+            <th>Nome Produto</th>
             <th>Opções</th>
         </tr>
         </table>
-
     </div>
 
 </body>

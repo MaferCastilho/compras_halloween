@@ -23,13 +23,13 @@ function Entrar(){
             criaLista();
             document.getElementById("nomeUser").value = '';
         }else{
-            alert("Usuário por favor preencher o campo nome");
+            alert("Usuário por favor preencher o campo de Produtos");
         }
     }
     
     // FUNÇÃO PARA CRIAÇÃO DE LISTA NA TABELA
     function criaLista(){
-        let tabela = document.getElementById('tabela').innerHTML = "<tr><th>Nome Usuário</th><th>Opções</th></tr>";
+        let tabela = document.getElementById('tabela').innerHTML = "<tr><th>Nome Produto</th><th>Opções</th></tr>";
 
         // LAÇO DE REPETIÇÃO PARA COLOCAR NOMES NA TABELA
         for(let i=0;i <= (dadosLista.length-1);i++){
@@ -49,4 +49,3 @@ function Entrar(){
         dadosLista.splice((i - 1), 1);
         document.getElementById('tabela').deleteRow(i);
     }
-    // teste
